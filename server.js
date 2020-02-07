@@ -9,15 +9,15 @@ const PORT = process.env.PORT || 3001
 app.use(express.static('./public'));
 
 
-app.get("/", indexPage)
+app.get('/', indexPage)
 function indexPage(request, response) {
-  response.render('./public/index.html')
+  response.status(200).render('./public/index.html')
 }
 
 
 
 ///Error handler////
-app.get("*", notFoundHandler)
+app.get('*', notFoundHandler)
 function notFoundHandler(request, response) {
   response.status(404).send('Sorry, something went wrong');
 }
