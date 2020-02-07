@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/module.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="name">Jin Kim</h1>
+        <p>Seattle, WA</p>
+        <p>Fullstack developer</p>
+        <a href="https://www.linkedin.com/in/jin-kim-771213162/"><img src="./image/linkedin.png" alt=""></a>
+        <a href="https://github.com/jinwoov"><img src="./image/github-image.png" alt=""></a>
+    </header>
+    <hr>
+    <main>
+        <section id="profile">
+            <img src="./image/IMG_0339.jpeg" alt="profile picture" id="profile-photo">
+            <p>Raised in Hawaii, moved to seattle in hopes of new opportunity. I came across opportunities in software development industry. After going through the coding program, I've learned to enjoy solving challenging problems. I want bring my past experience in medical field to create application that will be helpful for underserved patients to receive affordable health care and help to build great communication between provider and patients.</p>
+        </section>
+        <article>
+            <section>
+                <a href="https://jumpstartcf.herokuapp.com/">
+                    <img src="./image/jumpstart.png" alt="jumpstart" class="sites">
+                </a>
+                <figcaption> <strong>F</strong>ullstack application that has compilation of job listings from four different APIs into one website providing user to see the result in one search in randomized order. 
+
+                <strong>A</strong>pplied PSQL database to store users favorited job and able to render whenever user seeks</figcaption>
+            </section>
+            <section>
+                <a href="https://bd-jk-booklists.herokuapp.com/">
+                    <img src="./image/book-app.png" alt="Book App" class="sites">
+                </a>
+                <figcaption><strong>F</strong>ullstack application that has Stored favorite book into PSQL database and render it to the users.
+
+                <strong>C</strong>reated backend server to call REST API and show it in front end using EJS files
+                </figcaption>
+            </section>
+            <section>
+                <a href="https://jinwoov.github.io/Star-Hunt-Wars/">
+                    <img src="./image/star-hunt-wars.png" alt="star-hunt-wars" class="sites">
+                </a>
+                <figcaption><strong>P</strong>ersonality quiz based on Star Wars trilogy and allow user to store data to render at the end.</figcaption>
+            </section>
+        </article>
+
+    </main>
+    <footer>
+        <p>&copy;opyright Jin Kim</p>
+
+        </footer>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/app.js"></script>
+
+</html>
