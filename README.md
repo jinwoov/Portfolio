@@ -1,2 +1,6 @@
 # Portfolio
-This is repo is portfolio past projects
+- This repo is collection of projects that I worked on and currently working on.
+
+## How to run  
+- Deployed website: https://jwk-portfolio.herokuapp.com/  
+
