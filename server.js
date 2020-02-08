@@ -6,7 +6,7 @@ require('dotenv').config();
 require('ejs');
 const PORT = process.env.PORT || 3001
 
-///// helper 
+///// helper ///
 app.use(express.static('./public'));
 app.set('view engine', 'ejs');
 
