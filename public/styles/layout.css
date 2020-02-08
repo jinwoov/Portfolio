@@ -14,7 +14,7 @@ header {
 }
 
 #fade {
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 50%, #e1ccc2fd 100%);
+    background: linear-gradient(to bottom, #e1ccc200 5%, #e1ccc2 100%);
     height:100%;
     width: 100%;
     white-space: pre-line;
