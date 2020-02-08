@@ -62,9 +62,8 @@ a img {
     margin-top: 3%;
 }
 footer>div>a>img {
-    width: 30px;
+    width: 5%;
     padding: 5px;
-    height: 10%;
     margin: 5px 0px;
 }
 footer div {
@@ -89,6 +88,9 @@ aside a {
 }
 
 @media (min-width: 960px) {
+    footer>div>a>img {
+        width: 30px;
+    }
 
     #profile img {
         width: 25%;
