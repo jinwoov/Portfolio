@@ -12,7 +12,6 @@ const nodemailer = require('nodemailer');
 
 //EMAIL FORM
 let username = process.env.USERNAME;
-let pass = process.env.PASS;
 let send = process.env.SENDGRID_API_KEY
 
 ///// helper ///
@@ -60,7 +59,6 @@ function adminLogin(request, response) {
 
 function contactMe(request,response) {
   let {name, email, message} = request.body;
-  console.log('thisis the username for gmail', username, pass)
   let transporter = nodemailer.createTransport({
     host: "smtp.sendgrid.net",
     port: 587,
@@ -79,7 +77,6 @@ function contactMe(request,response) {
   }
   transporter.sendMail(mailOpts)
     .then(result => {
-      console.log('this is result from sending', result)
       if (result.accepted.length > 0) {
         response.status(200).render('./index', {thankYou: true});
       } else {

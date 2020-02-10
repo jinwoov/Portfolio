@@ -87,12 +87,12 @@ aside a {
 }
 
 form {
-    width: 100%;
+    width: 95%;
     height: 100%;
     background-color: white;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
     margin: auto;
-    margin-top: 5%;
+    margin-top: 20px;
     border-radius: 5%;
     padding: 10px;
 }
@@ -169,7 +169,69 @@ h2 {
     font-family: 'Caveat', cursive;
 }
 
+/* hamburger */
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+  .menu {
+      position: absolute;
+      background-color: black;
+      width: 20%;
+      left: 10px;
+      top: 50px;
+  }
+
+  .menu li {
+      border-bottom: 1px white solid;
+      font-size: 20px;
+  }
+  .menu li a {
+      text-decoration: none;
+      color: white;
+  }
+
+/* nav bar */
+
+
 @media (min-width: 960px) {
+    .container {
+        display: none;
+    }
+    
+    .menu {
+        display: none;
+    }
+
     footer>div>a>img {
         width: 30px;
     }

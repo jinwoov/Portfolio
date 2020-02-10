@@ -12,4 +12,9 @@ $(document).scroll(function() {
   }
 })
 
+function myFunction(x) {
+  x.classList.toggle("change");
+  $('.menu').toggle(500, 'linear');
+}
 
+$('.menu').hide();
