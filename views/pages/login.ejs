@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+<body>
+<main>
+<form action="/admin" method="post">
+<label for="username">
+    <span>Username</span>
+    <input type="text" name="username" placeholder='Username' />
+</label>
+<label for="password">
+    <span>Password</span>
+    <input type="password" name="password" id="password" placeholder="Password" />
+</label>
+<button type='submit'>Login</button>
+</form>
+</main>
+</body>
+</html>

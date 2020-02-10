@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+</head>
+<body>
+    <table>
+        <% result.forEach(results => { %>
+            <tr>
+        <th><%= results.title %></th>
+        <td><%= results.summary %></td>
+        <td><%= results.url %></td>
+    </tr>
+   <% }) %>
+   <form action="/admin/insert" method="post">
+        <tr>
+            <td><input type="text" name="title" id="title" /></td>
+            <td><input type="text" name="summary" id="summary" /></td>
+            <td><input type="text" name="url" id="url" /></td>
+        </tr>
+    </table>
+    <button type="submit">Adding</button>
+</form>
+</body>
+</html>
