@@ -92,7 +92,7 @@ form {
     background-color: white;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 5%;
     padding: 10px;
 }
@@ -167,6 +167,13 @@ form button {
 h2 {
     font-size: 3rem;
     font-family: 'Caveat', cursive;
+}
+
+#projects {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 3em;
+    margin: 12px;
+    margin-top: 120px;
 }
 
 /* hamburger */
