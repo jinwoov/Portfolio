@@ -59,6 +59,7 @@ function adminLogin(request, response) {
 
 function contactMe(request,response) {
   let {name, email, message} = request.body;
+  console.log('thisis the username for gmail', username, pass)
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
@@ -77,6 +78,7 @@ function contactMe(request,response) {
   }
   transporter.sendMail(mailOpts)
     .then(result => {
+      console.log('this is result from sending', result)
       if (result.accepted.length > 0) {
         response.status(200).render('./index', {thankYou: true});
       } else {
