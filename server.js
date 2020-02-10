@@ -62,9 +62,8 @@ function contactMe(request,response) {
   console.log('thisis the username for gmail', username, pass)
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
-    requireTLS: true,
+    port: 465,
+    secure: true,
     auth: {
       user: username,
       pass: pass
