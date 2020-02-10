@@ -75,7 +75,7 @@ function contactMe(request,response) {
     from: email,
     to: username,
     subject: `${name} from My Portfolio `,
-    text: `${message} EMAIL IS ${email}`
+    text: message
   }
   transporter.sendMail(mailOpts)
     .then(result => {
