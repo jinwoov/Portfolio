@@ -1,0 +1,14 @@
+<h3 id="projects">Projects</h3>
+<article>
+<% data.forEach(result => { %>
+    <section>
+        <a href="<%= result.url %>">
+                <img src="<%= result.image_url %>" alt="<%= result.title %>" class="sites">
+            </a>
+            <figcaption>
+                       <h4><%= result.title %></h4>
+                <%- result.summary %>
+            </figcaption>
+            </section>
+      <%  }) %>
+ </article>

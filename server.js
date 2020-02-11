@@ -29,7 +29,13 @@ app.post('/admin/insert', insertData)
 
 
 function indexPage(request, response) {
-  response.status(200).render('./index', {thankYou: false});
+  let PSQL = 'SELECT * FROM user_storage;';
+  client.query(PSQL)
+    .then(result => {
+      response.status(200).render('./index', {
+        thankYou: false,
+        data: result.rows});
+    })
 }
 
 function adminPage(request, response) {
@@ -47,7 +53,6 @@ function adminLogin(request, response) {
         let SQL1 = `SELECT * FROM user_storage`;
         client.query(SQL1)
           .then(data=> {
-            console.log(data)
             response.status(200).render('./pages/admin',{result: data.rows})
           });
       }
@@ -87,12 +92,12 @@ function contactMe(request,response) {
 
 
 function insertData(request, response) {
-  let {title, summary, url} = request.body
-  let SQL2 = `INSERT INTO user_storage (title,summary,url) VALUES ($1, $2, $3)`;
-  let safeValue = [title,summary,url];
+  let {title, summary, url, image_url} = request.body
+  let SQL2 = `INSERT INTO user_storage (title,summary,url,image_url) VALUES ($1, $2, $3, $4)`;
+  let safeValue = [title,summary,url,image_url];
   client.query(SQL2, safeValue)
     .then(result => {
-      response.status(200).redirect('/')
+      response.status(200).redirect('/admin')
     })
 }
 
