@@ -5,7 +5,7 @@ $('.show-update').on('click', updateButton)
 function updateButton(e) {
   e.preventDefault();
   let num = $(this).val();
-  $(`form#${num}`).toggle();
+  $(`#update${num}`).toggle();
 }
 $('.delete-container').on('click', deleteButton)
 function deleteButton(e) {
