@@ -1,0 +1,8 @@
+
+<button class="delete-container" id='delete' value="<%= results.id %>">Delete</button>
+
+<form action='/delete/<%= results.id %>?_method=DELETE' method="post" class="delete-form" id="delete<%= results.id %>">
+    <p>You sure you want to erase this?</p>
+    <button type='submit' id='delete'>Delete</button>
+    <input type="button" class="cancel" id='delete-cancel' value="Cancel" />
+</form>

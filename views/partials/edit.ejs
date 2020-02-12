@@ -1,0 +1,13 @@
+<% let action = formAction === 'update' ? `/update/${results.id}?_method=PUT` : '/update'; %>
+
+<button value="<%- results.id %>" class="show-update">Update</button>
+<form action="<%= action %>" method="post" class="update" id='<%- results.id %>'>
+
+    <input type='text' id='title' name="title" value="<%= results.title %>" required />
+    <textarea id='summary' name="summary" value="<%= results.summary %>"><%- results.summary %></textarea>
+    <input type='text' id='url' name="url" value="<%= results.url %>" />
+    <input type='text' id='image_url' name="image_url" value="<%= results.image_url %>" />
+
+    <button type="submit">Change</button>
+    <input type="button" class="cancel" value="Cancel" />
+</form>

@@ -8,13 +8,17 @@
 </head>
 <body>
     <form action="/admin/insert" method="post">
+        <h1>Insert</h1>
         <input type="text" name="title" id="title" placeholder="title" />
         <textarea id="content-post" type="textarea" id="summary" name="summary" placeholder="summary" maxlength="140" rows="7" required></textarea>               
         <input type="text" name="url" id="url" placeholder="url" />
         <input type="text" name="image_url" id="image_url" placeholder="image_url" />
+        <input type="hidden" name="user_storage_id" id="user_storage_id" />
 <div><button type="submit">Adding</button>
 </div>
 </form>
+
+<a href="/">HOME</a>
     <table>
         <tr>
             <tr>
@@ -22,6 +26,8 @@
                 <th>Summary</th>
                 <th>Url</th>
                 <th>Image Url</th>
+                <th>Update</th>
+                <th>Delete</th>
             </tr>
         </tr>
         <% result.forEach(results => { %>
@@ -30,9 +36,16 @@
         <td><%= results.summary %></td>
         <td><%= results.url %></td>
         <td><%= results.image_url %></td>
+        <td><%- include('../partials/edit', {formAction: 'update', results: results}) %>
+        </td>
+        <td>
+            <%- include('../partials/delete', {formAction: 'delete', results: results}) %>
+        </td>
     </tr>
    <% }) %>
 </table>
 
 </body>
+<script src="./js/jquery.js"></script>
+<script src="./js/admin/app.js"></script>
 </html>

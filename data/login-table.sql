@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS user_storage;
 
 CREATE TABLE user_storage
 (
-    user_id INTEGER, 
+    id SERIAL PRIMARY KEY,
     user_storage_id INTEGER,
     title VARCHAR(255),
     summary TEXT,
