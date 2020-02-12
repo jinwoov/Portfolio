@@ -1,13 +1,13 @@
-<% let action = formAction === 'update' ? `/update/${results.id}?_method=PUT` : '/update'; %>
+<% let action = formAction === 'update' ? `/update/${data.id}?_method=PUT` : '/update'; %>
 
-<button value="<%- results.id %>" class="show-update">Update</button>
-<form action="<%- action %>" method="post" class="update" id='update<%- results.id %>'>
+<button value="<%- data.id %>" class="show-update">Update</button>
+<form action="<%- action %>" method="post" class="update" id='update<%- data.id %>'>
 
-    <input type='text' id='title' name="title" value="<%= results.title %>" required />
-    <textarea id='summary' name="summary" value="<%= results.summary %>"><%- results.summary %></textarea>
-    <input type='text' id='url' name="url" value="<%= results.url %>" />
-    <input type='text' id='image_url' name="image_url" value="<%= results.image_url %>" />
+    <input type='text' id='title' name="title" value="<%= data.title %>" required />
+    <textarea id='summary' name="summary" value="<%= data.summary %>"><%- data.summary %></textarea>
+    <input type='text' id='url' name="url" value="<%= data.url %>" />
+    <input type='text' id='image_url' name="image_url" value="<%= data.image_url %>" />
 
     <button type="submit">Change</button>
-    <input type="button" class="cancel" />
+    <input type="button" class="cancel" value="cancel" />
 </form>

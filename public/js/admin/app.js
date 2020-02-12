@@ -1,7 +1,6 @@
 'use strict';
 
 $('.show-update').on('click', updateButton)
-
 function updateButton(e) {
   e.preventDefault();
   let num = $(this).val();
