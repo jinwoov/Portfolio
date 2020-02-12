@@ -1,0 +1,21 @@
+.form-box {
+    border: black 2px outset;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-top: 15%;
+    padding: 5%;
+    background-color: white;
+}
+
+.form-box label {
+    display: block;
+    font-size: 30px;
+}
+
+.form-box input {
+    display: block;
+    margin: 5% auto;
+    width: 40%;
+    font-size: 20px;
+}

@@ -12,7 +12,8 @@ const nodemailer = require('nodemailer');
 
 //EMAIL FORM
 let username = process.env.USERNAME;
-let send = process.env.SENDGRID_API_KEY
+let send = process.env.SENDGRID_API_KEY;
+
 
 ///// helper ///
 app.use(express.static('./public'));
@@ -81,13 +82,13 @@ function contactMe(request,response) {
     text: message
   }
   transporter.sendMail(mailOpts)
+  let PSQL = 'SELECT * FROM user_storage;';
+  client.query(PSQL)
     .then(result => {
-      if (result.accepted.length > 0) {
-        response.status(200).render('./index', {thankYou: true});
-      } else {
-        response.status(200).render('./index', {thankYou: false});
-      }
-    }) .catch (err => console.error(err))
+      response.status(200).render('./index', {
+        thankYou: true,
+        data: result.rows});
+    }).catch (err => console.error(err))
 }
 
 

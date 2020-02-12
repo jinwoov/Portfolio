@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <%- include('../partials/head') %>
+    <link rel="stylesheet" href="./styles/admin/base.css">
+    <link rel="stylesheet" href="./styles/admin/layout.css">
+    <link rel="stylesheet" href="./styles/admin/module.css">
 </head>
 <body>
+    <form action="/admin/insert" method="post">
+        <input type="text" name="title" id="title" placeholder="title" />
+        <textarea id="content-post" type="textarea" id="summary" name="summary" placeholder="summary" maxlength="140" rows="7" required></textarea>               
+        <input type="text" name="url" id="url" placeholder="url" />
+        <input type="text" name="image_url" id="image_url" placeholder="image_url" />
+<div><button type="submit">Adding</button>
+</div>
+</form>
     <table>
+        <tr>
+            <tr>
+                <th>Title</th>
+                <th>Summary</th>
+                <th>Url</th>
+                <th>Image Url</th>
+            </tr>
+        </tr>
         <% result.forEach(results => { %>
             <tr>
         <th><%= results.title %></th>
@@ -13,15 +32,7 @@
         <td><%= results.image_url %></td>
     </tr>
    <% }) %>
-   <form action="/admin/insert" method="post">
-        <tr>
-            <td><input type="text" name="title" id="title" /></td>
-            <td><input type="text" name="summary" id="summary" /></td>
-            <td><input type="text" name="url" id="url" /></td>
-            <td><input type="text" name="image_url" id="image_url" /></td>
-        </tr>
-    </table>
-    <button type="submit">Adding</button>
-</form>
+</table>
+
 </body>
 </html>

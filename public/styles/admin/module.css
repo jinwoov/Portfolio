@@ -1,0 +1,48 @@
+form {
+    width: 60%;
+    background-color: white;
+    margin-top: 10px;
+    border: 2px inset black;
+    text-align: center;
+    padding: 10px;
+}
+
+form input {
+    width: 80%;
+    margin: 5px auto;
+    font-size: 20px;
+}
+
+form input::placeholder {
+    font-size: 20px;
+}
+
+form textarea {
+    width: 80%;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(88, 167, 88);
+    color: white;
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+
+td {
+    white-space: pre-line;
+    border: 1px black solid;
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+th {
+    border: 1px black solid;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding:5px;
+}
+
