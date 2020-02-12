@@ -15,7 +15,6 @@ function deleteButton(e) {
 }
 
 $('.cancel').on('click', cancelButton)
-
 function cancelButton(e) {
   e.preventDefault()
   $('.update').hide();

@@ -36,10 +36,10 @@
         <td><%= results.summary %></td>
         <td><%= results.url %></td>
         <td><%= results.image_url %></td>
-        <td><%- include('../partials/edit', {formAction: 'update', results: results}) %>
+        <td><%- include('../partials/edit', {formAction: 'update', results}) %>
         </td>
         <td>
-            <%- include('../partials/delete', {formAction: 'delete', results: results}) %>
+            <%- include('../partials/delete', {formAction: 'delete', results}) %>
         </td>
     </tr>
    <% }) %>
