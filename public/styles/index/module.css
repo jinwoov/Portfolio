@@ -2,11 +2,63 @@ p {
     text-align: center;
 }
 
-hr {
-    border: black 1px solid;
-    border-radius: 20%;
-    width: 30%;
-    box-sizing: border-box;
+/* Intro */
+#about {
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+}
+
+#skill-box {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#profile .skills {
+    box-shadow: none;
+}
+
+#profile .skills:hover {
+    opacity: 0.6;
+}
+
+#skill-explain {
+    display: grid;
+    grid-template: 50% 50%/ 33% 33% 33%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#skill-explain h4{
+    font-size: 1.2rem;
+}
+
+
+#about-hr {
+    border: solid 1px black;
+    width: 10%;
+}
+
+.header-container {
+    width: 100%;
+    font-family: 'Yeon Sung', cursive;    
+    position: absolute;
+    top: 50%;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 0 10px black
+
+}
+.header-container h1 {
+    font-size: 40px;
+}
+
+#totop img {
+    width: 40px;
+}
+
+#profile {
+    margin-top: 6em;
 }
 
 #profile img {
@@ -14,14 +66,17 @@ hr {
     margin: 2% auto;
     width: 60%;
     margin-bottom: 3%;
+    border-radius: 47%;
+    margin-top: 5%;
 }
 
 #profile p {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 5%;
-    margin-top: 0;
+    width: 60%;
+    margin: 5% auto;
     font-size: 1.2rem;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .sites {
@@ -74,12 +129,8 @@ aside a {
     display:none;
     position: fixed;
     right:5%;
-    bottom: 20%;
-    font-size: 5em;
-    color: white;
+    bottom: 12%;
     height: 10%;
-    text-shadow: 1px 1px 6px black ;
-    text-decoration: none;
 }
 
 #book {
@@ -87,7 +138,7 @@ aside a {
 }
 
 form {
-    width: 95%;
+    width: 100%;
     height: 100%;
     background-color: white;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
@@ -169,7 +220,8 @@ h2 {
 }
 
 #projects {
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     font-size: 3em;
     margin: 12px;
     margin-top: 120px;
@@ -177,6 +229,7 @@ h2 {
 
 /* hamburger */
 .container {
+    z-index: 99;
     display: inline-block;
     cursor: pointer;
     position: absolute;
@@ -211,22 +264,26 @@ h2 {
 
   .menu {
       position: absolute;
-      background-color: black;
-      width: 25%;
+      background-color: #242222;
+      width: 20%;
       left: 10px;
       top: 50px;
+      z-index: 99;
+      text-align: left;
       
   }
 
   .menu li {
       border-bottom: 1px white solid;
-      font-size: 25px;
-      padding: 5%;
+      font-size: 15px;
+      padding: 8%;
 
   }
   .menu li a {
+    font-family: 'Poppins', sans-serif;
       text-decoration: none;
       color: white;
+      font-weight: normal;
   }
 
   h4 {
@@ -240,20 +297,55 @@ h2 {
 
 @media (min-width: 960px) {
 
+    #skill-box {
+        display: flex;
+        margin-top: 8%;
+        text-align: center;
+    }
+
+
+    #profile .skills {
+        width: 20%;
+        margin-bottom: 4%;
+    }
+
+    #profile p {
+        margin-top: 2%;
+    }
+
     .container {
         display: none;
     }
     
     .menu {
-        display: none;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        height: 5%;
+        background: none;
+        display: block;
+    }
+    
+    .menu li {
+        border: none;
+        padding: 5px;
+        right: 5%;
+        position: absolute;
+    }
+
+    .menu li:first-child {
+        right: 15%;
     }
 
     footer>div>a>img {
-        width: 30px;
+        width: 50px;
+        margin-top: 10px;
     }
 
     #profile img {
         width: 25%;
+        border-radius: 47%;
     }
 
     article {
@@ -262,7 +354,7 @@ h2 {
     }
 
     article section {
-        margin: 5%
+        margin: 5%;
     }
     .sites {
         height: 200px;
@@ -270,6 +362,10 @@ h2 {
     figcaption {
         height: 213px;
         padding: 4%;
+    }
+
+    #totop img{
+        width: 60px;
     }
 
     form {

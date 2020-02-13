@@ -1,29 +1,33 @@
 'use strict';
 
-$(document).ready(() => {
-  $('body').fadeIn('slow');
-});
 
 $(document).scroll(function() {
-  if ($(document).scrollTop() >= 200) {
+  if ($(document).scrollTop() >= 400) {
     $('#totop').css("display", "block");
   } else {
     $('#totop').css("display", "none");
   }
 })
 
+$(window).resize(() => {
+  if ($(window).width() > 960) {
+    $('.menu').show();
+  } else {
+    $('.menu').hide();
+  }
+});
+
+$('#totop').on("click", clickTop);
+function clickTop(e) {
+  console.log('hitme');
+  $('#ball').show();
+}
+
 function myFunction(x) {
   x.classList.toggle("change");
   $('.menu').toggle(500, 'linear');
 }
-
-$('.menu').hide();
-
-
-// class App extends React.Component {
-//   render() {
-//       return <h1>hello world</h1>
-//   }
-// }
-
-// ReactDOM.render(<App />, $('.container'))
+if ($(window).width() < 960) {
+  $('.menu').hide();
+}
+$('#ball').hide();

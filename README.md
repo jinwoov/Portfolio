@@ -4,5 +4,5 @@
 ## How to run  
 - Deployed website: https://jwk-portfolio.herokuapp.com/  
 
-## Credit
-Header image: Photo by Fezbot2000 on Unsplash  
+## Credit  
+Photo by Julian Lozano on Unsplash
