@@ -107,6 +107,7 @@ figcaption {
     text-align: left;
     padding: 20px;
     background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 strong {
@@ -117,7 +118,7 @@ a img {
     margin-top: 3%;
 }
 footer>div>a>img {
-    width: 40px;
+    width: 50px;
     padding: 5px;
     margin: 5px 0px;
 }
@@ -217,6 +218,7 @@ form button {
 
 h2 {
     font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 #projects {
