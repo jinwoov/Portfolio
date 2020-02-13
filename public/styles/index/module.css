@@ -54,7 +54,7 @@ p {
 }
 
 #totop img {
-    width: 40px;
+    width: 60px;
 }
 
 #profile {
@@ -365,11 +365,6 @@ h2 {
         height: 213px;
         padding: 4%;
     }
-
-    #totop img{
-        width: 60px;
-    }
-
     form {
         width:60%;
     }
