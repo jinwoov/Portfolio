@@ -267,7 +267,7 @@ h2 {
   .menu {
       position: absolute;
       background-color: #242222;
-      width: 20%;
+      width: 27%;
       left: 10px;
       top: 50px;
       z-index: 99;
@@ -277,7 +277,7 @@ h2 {
 
   .menu li {
       border-bottom: 1px white solid;
-      font-size: 15px;
+      font-size: 25px;
       padding: 8%;
 
   }
@@ -295,6 +295,10 @@ h2 {
   }
 
 /* nav bar */
+
+#emailpost {
+    font-size:
+}
 
 
 @media (min-width: 960px) {
