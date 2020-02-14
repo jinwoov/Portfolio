@@ -30,11 +30,11 @@ p {
 }
 
 #skill-explain h4{
-    font-size: 1.2rem;
+    font-size: 2.5vh;
 }
 
 #skill-explain h4:nth-child(4){
-    font-size: 0.9rem;
+    font-size: 2vhß;
     line-height: 1.2;
 }
 
