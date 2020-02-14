@@ -310,6 +310,10 @@ h2 {
 
 @media (min-width: 960px) {
 
+    .about-hr {
+        width: 10%;
+    }
+
     #skill-box {
         display: flex;
         margin-top: 8%;
