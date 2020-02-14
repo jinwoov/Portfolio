@@ -310,6 +310,10 @@ h2 {
 
 @media (min-width: 960px) {
 
+    .menu li a {
+        color:white;
+    }
+
     .about-hr {
         width: 10%;
     }
