@@ -247,7 +247,7 @@ h2 {
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #000;
+    background-color: white;
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -271,8 +271,8 @@ h2 {
 
   .menu {
       position: absolute;
-      background-color: #242222;
-      width: 33%;
+      background-color: white;
+      width: 41%;
       left: 10px;
       top: 50px;
       z-index: 99;
@@ -281,7 +281,7 @@ h2 {
   }
 
   .menu li {
-      border-bottom: 1px white solid;
+      border-bottom: 1px black solid;
       font-size: 22px;
       padding: 6%;
 
@@ -289,7 +289,7 @@ h2 {
   .menu li a {
     font-family: 'Poppins', sans-serif;
       text-decoration: none;
-      color: white;
+      color: black;
       font-weight: normal;
   }
 
