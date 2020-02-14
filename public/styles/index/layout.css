@@ -13,8 +13,8 @@ div#bg-image {
     left:0;
     background-image: url('/image/splash-image.jpeg');
     background-position: center;
-    filter: blur(2px);
-     -webkit-filter: blur(2px);
+    filter: blur(1px);
+     -webkit-filter: blur(1px);
     background-repeat: no-repeat;
 }
 
