@@ -33,6 +33,10 @@ p {
     font-size: 1.2rem;
 }
 
+#skill-explain h4:nth-child(4){
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
 
 .about-hr {
     border: solid 1px black;
@@ -76,7 +80,6 @@ p {
     font-size: 1.2rem;
     line-height: 1.2;
     font-family: 'Poppins', sans-serif;
-
 }
 
 .sites {
