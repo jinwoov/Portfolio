@@ -16,6 +16,8 @@ div#bg-image {
     filter: blur(1px);
      -webkit-filter: blur(1px);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
