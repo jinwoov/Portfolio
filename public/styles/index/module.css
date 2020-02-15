@@ -271,7 +271,6 @@ h2 {
 
   .menu {
       position: absolute;
-      background-color: white;
       width: 41%;
       left: 10px;
       top: 50px;
@@ -284,6 +283,8 @@ h2 {
       border-bottom: 1px black solid;
       font-size: 22px;
       padding: 6%;
+      background-color: rgba(255, 255, 255, 0.466);
+
 
   }
   .menu li a {
