@@ -314,6 +314,9 @@ h2 {
     .menu li a {
         color:white;
     }
+    .menu li {
+        background-color: transparent;
+    }
 
     .about-hr {
         width: 10%;
