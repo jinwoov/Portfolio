@@ -16,7 +16,6 @@ div#bg-image {
     filter: blur(1px);
      -webkit-filter: blur(1px);
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -52,3 +51,9 @@ footer p {
     font-size: 1.5rem;
 }
 
+
+@media (min-width: 960px) {
+    div#bg-image {
+        background-size: cover;
+    }
+}
