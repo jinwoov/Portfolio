@@ -11,13 +11,12 @@ div#bg-image {
     position: absolute;
     top:0;
     left:0;
-    background-image: url('./image/splash-image.jpeg');
+    background-image: url('/image/splash-image.jpeg');
     filter: blur(1px);
      -webkit-filter: blur(1px);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
 }
 
 
