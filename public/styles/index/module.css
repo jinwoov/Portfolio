@@ -305,6 +305,10 @@ h2 {
 
 @media (min-width: 960px) {
 
+    div#bg-image {
+        background-attachment: fixed;
+    }
+
     .menu li a {
         color:white;
     }
