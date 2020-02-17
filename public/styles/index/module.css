@@ -307,6 +307,7 @@ h2 {
 
     div#bg-image {
         background-attachment: fixed;
+        background-size: cover;
     }
 
     .menu li a {
