@@ -23,6 +23,7 @@ div#bg-image {
 header {
     text-align: center;
     height:100vh;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 
@@ -34,6 +35,7 @@ main {
     width: 90%;
     margin: auto;
     text-align: center;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 footer {

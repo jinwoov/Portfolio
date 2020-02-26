@@ -10,3 +10,10 @@ body {
 .selector-for-some-widget {
     box-sizing: content-box;
   }
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

@@ -1,7 +1,7 @@
 'use strict';
 
 
-$(document).scroll(function() {
+$(document).scroll(function () {
   if ($(document).scrollTop() >= 400) {
     $('#totop').css("display", "block");
   } else {
@@ -31,3 +31,20 @@ if ($(window).width() < 960) {
   $('.menu').hide();
 }
 $('#ball').hide();
+
+////
+$(document).on("scroll", function () {
+  let pageTop = $(document).scrollTop()
+  let pageBottom = pageTop + $(window).height()
+  let tags = $("section#profile")
+
+  for (let i = 0; i < tags.length; i++) {
+    let tag = tags[i]
+
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible")
+    } else {
+      $(tag).removeClass("visible")
+    }
+  }
+})
